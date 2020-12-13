@@ -1,0 +1,30 @@
+.movieListWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0 0.5rem;
+    > .cardContainer {
+        flex-basis: calc(50% - 20px);
+    }
+
+    > .initialContentMessage {
+        width: 100%;
+        text-align: center;
+        color: #6d6d6d;
+    }
+
+    > .loadingWrapper {
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+    }
+}
+
+.selectedImage {
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 170%;
+}

@@ -1,0 +1,16 @@
+
+// Colors
+$dark-blue: #106cc8;
+
+// Breakpoints
+$breakpoints: (
+  "medium": (
+    min-width: 500px,
+  ),
+  "large": (
+    min-width: 1000px,
+  ),
+  "huge": (
+    min-width: 1200px,
+  ),
+);

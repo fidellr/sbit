@@ -1,0 +1,8 @@
+@import "../../utils/styles/mixins";
+.layoutContainer {
+    > .contentContainer {
+        padding-top: 3.3125rem;
+        max-width: 900px;
+        margin: auto;
+    }
+}

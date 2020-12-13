@@ -1,0 +1,32 @@
+@import "../../utils/styles/mixins";
+
+.loadingWrapper {
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.movieDetailWrapper {
+    padding: 1rem 1rem;
+    > .poster {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
+        padding-top: 100%;
+    }
+    
+    > .details > .detailContentContainer {
+        display: flex;
+        > p:first-child {
+            font-weight: 500;
+            padding-right: 0.5rem;
+        }
+    }
+
+    @include respond-to("medium") {
+        padding: 1rem 3.125rem;
+        > .poster {
+            padding-top: 56.25%;
+        }
+    }
+}

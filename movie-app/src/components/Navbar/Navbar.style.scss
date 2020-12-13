@@ -1,0 +1,26 @@
+@import "../../utils/styles/mixins";
+.navbarContainer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #3f3f3f;
+    z-index: 1;
+}
+
+.navbarContainer > .navbarWrapper {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    > .logo {
+        color: #fff;
+        font-weight: 500;
+        padding-right: 1rem;
+        margin: 0;
+        font-size: 14px;
+        cursor: pointer;
+        @include respond-to("medium") {
+            font-size: 1rem;
+        }
+    }
+}

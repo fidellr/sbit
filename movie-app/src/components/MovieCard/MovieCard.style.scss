@@ -1,0 +1,32 @@
+@import "../../utils/styles/mixins";
+.cardContainer {
+    border-radius: 20px;
+    border: 1px solid #bebebe;
+    margin: 0.5rem 0.5rem;
+    padding: 0.625rem;
+    > .poster {
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 50%;
+        padding-top: 75%;
+        cursor: pointer;
+    }
+}
+
+.cardContainer > .cardDetailsContainer {
+    p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    > .title {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+    }
+}
